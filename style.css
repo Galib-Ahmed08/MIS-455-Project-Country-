@@ -22,7 +22,7 @@
   
   /* Header */
   header {
-    background-color: rgba(44, 62, 80, 0.40);
+    background-color: rgba(166, 255, 0, 0.4);
     color: white;
     padding: 1.5rem 2rem;
     animation: fadeInDown 1s ease;
@@ -173,7 +173,7 @@
     background-color: #fefefe;
     margin: 10% auto;
     padding: 2rem;
-    border: 1px solid #888;
+    border: 1px solid #ff0000;
     width: 90%;
     max-width: 500px;
     border-radius: 10px;
@@ -191,7 +191,7 @@
   }
   
   .modal-content a {
-    color: #2980b9;
+    color: #ffffff;
     text-decoration: none;
   }
   
