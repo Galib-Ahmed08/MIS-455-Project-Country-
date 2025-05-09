@@ -178,7 +178,7 @@
     max-width: 500px;
     border-radius: 10px;
     position: relative;
-    animation: fadeIn 0.6s ease;
+    animation: fadeIn 0.5s ease;
   }
   
   .modal-content h2 {
