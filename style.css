@@ -1,0 +1,206 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Background */
+  .homepage-bg {
+    background: url('https://images.unsplash.com/photo-1606933988011-8adbb3ee269a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  header {
+    background-color: rgba(44, 62, 80, 0.40);
+    color: white;
+    padding: 1.5rem 2rem;
+    animation: fadeInDown 1s ease;
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header-top h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.2rem;
+    animation: fadeIn 1.2s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .nav-bar button {
+    margin-left: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #1abc9c;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-bar button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .search-bar input {
+    padding: 0.7rem;
+    width: 280px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .search-bar button {
+    padding: 0.7rem 1.3rem;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+  }
+  
+  /* Results */
+  .results {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 16px;
+    width: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 1.5rem;
+    transition: all 0.4s ease;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h2 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    margin-bottom: 0.3rem;
+    color: #555;
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgba(44, 62, 80, 0.40);
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: auto;
+    font-size: 0.95rem;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    animation: fadeIn 0.6s ease;
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .modal-content p {
+    margin: 0.5rem 0;
+  }
+  
+  .modal-content a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  
+  .close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+  }
+  
