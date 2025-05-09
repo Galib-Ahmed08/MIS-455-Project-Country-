@@ -13,7 +13,7 @@
   
   /* Background */
   .homepage-bg {
-    background: url('') no-repeat center center fixed;
+    background: url('https://images.unsplash.com/photo-1606933988011-8adbb3ee269a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -22,7 +22,7 @@
   
   /* Header */
   header {
-    background-color: rgba(166, 255, 0, 0.4);
+    background-color: rgba(44, 62, 80, 0.40);
     color: white;
     padding: 1.5rem 2rem;
     animation: fadeInDown 1s ease;
@@ -173,7 +173,7 @@
     background-color: #fefefe;
     margin: 10% auto;
     padding: 2rem;
-    border: 1px solid #ff0000;
+    border: 1px solid #888;
     width: 90%;
     max-width: 500px;
     border-radius: 10px;
@@ -191,7 +191,7 @@
   }
   
   .modal-content a {
-    color: #ffffff;
+    color: #2980b9;
     text-decoration: none;
   }
   
