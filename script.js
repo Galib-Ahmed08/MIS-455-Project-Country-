@@ -62,29 +62,7 @@ function displayCountries(countries) {
     container.appendChild(card);
   });
 }
-// Load all countries (used by Home button too)
-async function loadAllCountries() {
-    const allCountries = await fetchCountries("all");
-    displayCountries(allCountries);
-  }
-  
-  // Show About Modal
-  function showAbout() {
-    document.getElementById("aboutModal").style.display = "block";
-  }
-  
-  // Close About Modal
-  function closeAbout() {
-    document.getElementById("aboutModal").style.display = "none";
-  }
-  
-  // Close modal on outside click
-  window.onclick = function (event) {
-    const modal = document.getElementById("aboutModal");
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
+
   
   // Load all countries on page load
   window.onload = loadAllCountries;
